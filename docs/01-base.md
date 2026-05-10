@@ -74,16 +74,16 @@ docker compose version
 
 A daily rsync backs up `/mnt/disk1` to `/mnt/disk2`.
 
-Full script: [`scripts/backup.sh`](../scripts/backup.sh)
+Full script: [`scripts/system/backup.sh`](../scripts/system/backup.sh)
 
 ```bash
 # Make it executable
-chmod +x ~/digital-garden/scripts/backup.sh
+chmod +x ~/digital-garden/scripts/system/backup.sh
 
 # Add cron job — runs daily at 3 AM
 crontab -e
 # Add this line:
-0 3 * * * /home/adrian/digital-garden/scripts/backup.sh
+0 3 * * * /home/adrian/digital-garden/scripts/system/backup.sh
 ```
 
 ## What's Next
